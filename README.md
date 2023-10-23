@@ -17,7 +17,7 @@ PostgreSQL
 Docker
 
 ## Попробовать демо-версию:
-* [Foodgram](https://ya-taski.ddns.net/)
+* [Taski](https://ya-taski.ddns.net/)
 ---
 
 ## Как запустить проект:
@@ -59,11 +59,6 @@ POSTGRES_PASSWORD=<Желаемый_пароль_пользователя_баз
 DB_HOST=db
 DB_PORT=5432
 ```
-Перейдите директорию infra:
-
-```
-cd infra
-```
 
 Соберите и запустите контейнеры в фоновом режиме
 ```
@@ -81,11 +76,6 @@ sudo docker compose -f docker-compose.yml exec backend python manage.py collects
 Создайте суперпользователся
 ```
 sudo docker compose -f docker-compose.yml exec backend python manage.py createsuperuser
-```
-
-Загрузите игредиенты 
-```
-sudo docker compose -f docker-compose.yml exec backend python manage.py load_data
 ```
 
 ![main.yml](https://github.com/VladimirChernyy/foodgram-project-react/actions/workflows/main.yml/badge.svg)
