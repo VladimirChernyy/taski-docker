@@ -17,7 +17,7 @@ PostgreSQL
 Docker
 
 ## Попробовать демо-версию:
-* [Foodgram](https://ya-foodgramm.ddns.net)
+* [Foodgram](https://ya-taski.ddns.net/)
 ---
 
 ## Как запустить проект:
@@ -34,9 +34,9 @@ sudo apt-get install docker-compose-plugin;
 ``` 
 Клонируйте с GitHub проект и перейдите в директорию проекта.
 ``` 
-git@github.com:VladimirChernyy/foodgram-project-react.git
+git@github.com:VladimirChernyy/taski-docker.git
 
-cd foodgram-project-react
+cd taski-docker
 ``` 
 Генерируем новый секретный ключ Django
 
