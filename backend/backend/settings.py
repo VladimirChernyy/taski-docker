@@ -11,7 +11,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = os.getenv('DEBUG', False) in ('True', '1', 't')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1', 'localhost', '62.84.123.251', 'ya-taski.ddns.net'
+]
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
