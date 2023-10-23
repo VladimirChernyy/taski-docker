@@ -38,11 +38,6 @@ git@github.com:VladimirChernyy/taski-docker.git
 
 cd taski-docker
 ``` 
-Генерируем новый секретный ключ Django
-
-```
-sudo docker compose -f docker-compose.yml exec backend python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
-```
 
 Создаем файл .env, в котором нужно указать данные
 
@@ -52,7 +47,6 @@ sudo nano .env
 Добавьте в файл .env код  
 
 ```
-DJANGO_KEY=<Сгенерированный_ключ>
 POSTGRES_DB=<Желаемое_имя_базы_данных>
 POSTGRES_USER=<Желаемое_имя_пользователя_базы_данных>
 POSTGRES_PASSWORD=<Желаемый_пароль_пользователя_базы_данных>
